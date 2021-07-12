@@ -35,7 +35,7 @@
           <tbody>
             <?php
               $query = "SELECT * FROM contenido";
-              $result = mysqli_query($conn,$query);
+              $result = mysqli_query($conn,$query) or die(mysqli_error($conn));
 
               while($row = mysqli_fetch_array($result)) { ?>
                 <tr>
