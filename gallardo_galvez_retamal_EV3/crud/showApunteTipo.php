@@ -33,7 +33,7 @@
           <tbody>
             <?php
               $query = "SELECT * FROM apunte_tipo";
-              $result = mysqli_query($conn,$query);
+              $result = mysqli_query($conn,$query)or die(mysqli_error($conn));
               while($row = mysqli_fetch_array($result)) { ?>
                 <tr>
                   <td><?php echo $row['id']?></td>
