@@ -35,7 +35,7 @@
             <?php
               $id= $_GET['id'];
               $query = "SELECT id, contenido_id, nombre, url, tipo, fecha_creacion, fecha_actualizacion FROM apunte where contenido_id = $id";
-              $result = mysqli_query($conn,$query);
+              $result = mysqli_query($conn,$query)or die(mysqli_error($conn));
               while($row = mysqli_fetch_array($result)) { ?>
                 <tr>
                   <td><?php echo $row['nombre']?></td>
