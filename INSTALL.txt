@@ -1,0 +1,53 @@
+1.- ingrese al repositorio https://github.com/Berphet/evaluacion3tm/tree/v0.8-beta
+2.- descargue el contenido de la rama v0.8-beta.
+3.- descomprima el archivo evaluacion3tm-0.8-beta
+4.- ingrese a la pagina https://www.000webhost.com/ y proceda a registrarse e iniciar sesion con google
+5.- una vez registrado, asigne el nombre de su proyecto y la contraseña generada guardela en un portapapeles
+6.- proceda a seleccionar upload your site o subir su sitio al momento de crear su pagina
+7.- ingrese a la carpeta public_html
+8.- ingresar a la carpeta gallardo_galvez_retamal_EV3, suba el archivo index.php a la carpeta public_html de webhost
+9.- proceda a crear una carpeta con las opciones de la esquina superior derecha (new folder) y asigne el nombre de crud
+10.- ingrese a la carpeta crud, copie y pegue todos los archivos de la carpeta gallardo_galvez_retamal_EV3/crud a la carpeta crud de su webhost
+11.- vuelva a la carpeta public_html y en esta ocasion cree una carpeta (new folder) llamada dataConfig y copie y pegue el archivo de la carpeta gallardo_galvez_retamal_EV3/dataConfig a la carpeta dataConfig de su webhost
+12.- repita el proceso 11 y en esta ocasion cree una carpeta llamada estilos, copie y pegue los archivo de la carpeta gallardo_galvez_retamal_EV3/estilos a la carpeta estilos de su webhost
+13.- vuelva a la pagina principal y seleccione manage website en la imagen de su pagina o configurar sitio
+14.- ingrese a Tools o herramientas y seleccione database manager, cree una nueva base de datos con new database
+15.- asigne un nombre y usuario a su base de datos, guarde la contraseña en un portapapeles
+16.- una vez creada la base de datos, copie el nombre de la base de datos, guardela en un portapapeles y el usuario tambien.
+16.- seleccione manage y selecione PhpMyAdmin, selecciona la base de datos finalizada en "nombre de su base de datos"
+17.- importe el dump de la base de datos "marshall" dentro de su base de datos finalizada en "nombre de su base de datos", esto solamente copiara el contenido de una base de datos previamente creada a su base de datos 
+18.- vuelva a la pagina principal, seleccione manage website, seleccione tools e ingrese a file manager y seleccione upload files o subir archivos, ingrese a public_html
+19.- ingrese a dataConfig y abra DBConfig, cambie servername por "localhost", ingrese el usuario de la base de datos copiado en portapapeles en username, password la contraseña de la base de datos copiada en portapapeles y finalmente el nombre de la base de datos copiada en portapapeles en database
+20.- vuelva a la pagina principal y seleccione el link asignado a su pagina
+
+
+para acceder a la pagina del grupo formado por:
+Marshall Gallardo
+Bárbara Retamal
+Juan Gálvez
+
+ingrese al link: https://evaluaciontm3.000webhostapp.com/
+
+en caso de instalar sólo para que funcione con wampserver y trabajar de manera local:
+mover la carpeta gallardo_galvez_retamal_EV3 a la ubicacion: 
+
+C:\wamp64\www    (disco local C, carpeta wamp 64, dentro de esa carpeta se encuentra la carpeta www)
+
+ingresar a la carpeta gallardo_galvez_retamal_EV3, ingresar a la carpeta dataConfig, abrir DBConfig y editar:
+
+cambiar localhost:3307 a 3306 en caso de importar la base de datos al servicio mysql
+dejar localhost:3307 en caso de importar la base de datoos al servicio MariaDB
+
+cambiar nombre de usuario al suyo 
+cambiar contraseña a la respectiva de su usuario
+ingresar el nombre de la base de datos a la cual importara el dump de las tablas
+
+ahora importar la base de datos:
+ingresar a phpmyadmin con su usuario y contraseña, seleccione su base de datos, ir a la opcion import/importar y seleccionar el archivo marshall.sql
+
+listo, la base de datos a usar ya fue importada, el archivo que conecta a la base de datos fue configurado y queda probar la plataforma
+
+ingrese a su navegador y escriba: " http://localhost/gallardo_galvez_retamal_EV3/index.php " para acceder a los contenidos
+
+
+y ya podra visualizar, insertar, actualizar y eliminar contenido y sus apuntes
