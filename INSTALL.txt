@@ -1,3 +1,7 @@
+este proyecto utiliza complementos comp PhP 7.3 y servicios MySQL.
+Servicios que prestan funciones de MySQL como PhpMyAdmin que presentan una interfaz gráfica para el manejo de datos.
+este INSTALL está diseñado para instalar el software dentro de un servidor gratuito definido.
+
 1.- ingrese al repositorio https://github.com/Berphet/evaluacion3tm/tree/v0.8-beta
 2.- descargue el contenido de la rama v0.8-beta.
 3.- descomprima el archivo evaluacion3tm-0.8-beta
